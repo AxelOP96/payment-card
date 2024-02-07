@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h1 class="title">Payment</h1>
+            <form action="">
+                <div class="row">
+                    <div class="empty"></div>
+                    <div class="content">
+                        <h4>Card</h4>
+                        <legend>Pay with a card</legend>
+                        <label for="card">
+                            <img class="icon" src="./card-outline.svg" alt="">
+
+                            <input type="text" placeholder="Card number" id="card">
+                        </label>
+                        <div class="row-together">
+                            <label for="date">
+                                <img class="another" src="./card-outline.svg" alt="">
+
+                                <input class="fifty left" type="text" placeholder="mm/dd" id="date">
+                            </label>
+                            <label for="">
+                                <img class="last" src="./lock-closed-outline.svg" alt="">
+                                <input class="fifty left" type="text" placeholder="cvc" autocomplete="cc-number">
+                            </label>
+                        </div>
+
+
+                        <input type="checkbox" name="name" id="name">
+                        <label for="name">Remember my name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="full"></div>
+                    <div class="pay">
+                        <h4>Get first. Pay later</h4>
+                        <legend>Pay within 30 days.</legend>
+
+                    </div>
+                </div>
+                <input class="button" type="button" value="CONTINUE">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
